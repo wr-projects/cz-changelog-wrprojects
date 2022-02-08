@@ -42,7 +42,7 @@ jobs:
           ref: ${{ github.head_ref }}
           fetch-depth: 0
       - name: Git Version
-        uses: codacy/git-version@2.5.3
+        uses: codacy/git-version@2.5.4
 
   # Run linter to ensure new code respect coding rules
   linter:
