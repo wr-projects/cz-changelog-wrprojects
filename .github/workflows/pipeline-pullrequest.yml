@@ -79,7 +79,7 @@ jobs:
           project: true # Enable or disable the idea that adding an issue to a project drops its triage state.
           milestone: true # Enable or disable the idea that setting a milestone to an issue drops its triage state.
       - name: Labeler
-        uses: actions/labeler@v3
+        uses: actions/labeler@v4
         with:
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
           configuration-path: .github/config/labeler.yml
