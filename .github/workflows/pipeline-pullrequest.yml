@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
       - name: GitGuardian Scanner
@@ -31,7 +31,7 @@ jobs:
     needs: [ gitguardian ]
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
       - name: PR Optimizer
@@ -107,7 +107,7 @@ jobs:
     name: 'Pull Request Thank You'
     steps:
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
           fetch-depth: 0
     - name: 'Pull Request Thank You'
@@ -134,7 +134,7 @@ jobs:
     needs: [ gitguardian ]
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
       - name: Emojify PR Title

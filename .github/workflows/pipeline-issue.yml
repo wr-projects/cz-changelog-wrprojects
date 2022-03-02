@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
       - name: GitGuardian Scanner
@@ -40,7 +40,7 @@ jobs:
         env:
           GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
       - name: Checkout Code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         if: steps.check.outputs.triggered == 'true'
         with:
           fetch-depth: 0
