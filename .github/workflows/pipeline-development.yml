@@ -54,7 +54,7 @@ jobs:
         with:
           fetch-depth: 0
       - name : Setup NodeJS
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3.1.0
         with:
           node-version: 16
       - name: Lint Code Base
@@ -105,7 +105,7 @@ jobs:
       with:
           fetch-depth: 0
     - name: install node v14.16
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v3.1.0
       with:
         node-version: 14.16
     - name: yarn install
