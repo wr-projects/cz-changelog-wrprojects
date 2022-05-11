@@ -45,7 +45,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Automatic Rebases
-        uses: cirrus-actions/rebase@1.5
+        uses: cirrus-actions/rebase@1.7
         if: steps.check.outputs.triggered == 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
